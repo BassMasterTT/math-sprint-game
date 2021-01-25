@@ -77,6 +77,15 @@ function createEquations() {
   shuffle(equationsArray);
 }
 
+// Add Equations to DOM
+function equationsToDOM() {
+  equationsArray.forEach((equation) => {
+    // Item
+    const item = document.createElement('div');
+    item.classList.add('item');
+  })
+}
+
 // Dynamically adding correct/incorrect equations
 function populateGamePage() {
   // Reset DOM, Set Blank Space Above
