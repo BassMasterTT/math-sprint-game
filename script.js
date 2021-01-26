@@ -71,7 +71,7 @@ function scoresToDOM() {
   penaltyTimeEl.textContent = `Penalty: +${penaltyTime}s`;
   finalTimeEl.textContent = `${finalTimeDisplay}s`;
   // Scroll to Top, go to Score Page
-  itemContainer.scrollTo 
+  itemContainer.scrollTo({ top: 0, behavior: "instant" });
   showScorePage();
 }
 
