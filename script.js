@@ -52,7 +52,7 @@ function scoresToDOM() {
   finalTimeDisplay = finalTime.toFixed(1);
   baseTime = timePlayed.toFixed(1);
   penaltyTime = penaltyTime.toFixed(1);
-  baseTimeEl.textContent = `Base Time: ${baseTime}`;
+  baseTimeEl.textContent = `Base Time: ${baseTime}s`;
   penaltyTimeEl.textContent = `Penalty: +${penaltyTime}s`;
   finalTimeEl.textContent = `${finalTimeDisplay}s`;
   showScorePage();
