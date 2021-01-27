@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div class="game-cointaier">
+    <div class="game-container">
+
         <!-- Header -->
         <div class="header">
             <h1>Math Sprint Game</h1>
@@ -29,7 +30,6 @@
                             <span class="best-score-value"></span>
                         </span>
                     </div>
-
                     <!-- 25 Questions Radio Input -->
                     <div class="radio-container">
                         <label for="value-25">25 Questions</label>
@@ -39,8 +39,6 @@
                             <span class="best-score-value"></span>
                         </span>
                     </div>
-
-
                     <!-- 50 Questions Radio Input -->
                     <div class="radio-container">
                         <label for="value-50">50 Questions</label>
@@ -50,7 +48,6 @@
                             <span class="best-score-value"></span>
                         </span>
                     </div>
-
                     <!-- 99 Questions Radio Input -->
                     <div class="radio-container">
                         <label for="value-99">99 Questions</label>
@@ -63,14 +60,14 @@
                 </div>
                 <!-- Start Button -->
                 <div class="selection-footer">
-                    <button class="start" type='submit'>Start Round</button>
+                    <button class="start" type="submit">Start Round</button>
                 </div>
             </form>
         </div>
 
         <!-- Countdown Page -->
         <div class="card" id="countdown-page" hidden>
-            <h1 class="countdown"></h1>
+            <h1 class="countdown">3</h1>
         </div>
 
         <!-- Game Page -->
@@ -85,7 +82,7 @@
         </div>
 
         <!-- Score Page -->
-        <div class='card' id="score-page" hidden>
+        <div class="card" id="score-page" hidden>
             <!-- Score Container -->
             <div class="score-container">
                 <h1 class="title">Your Time</h1>
@@ -95,7 +92,7 @@
             </div>
             <!-- Play Again Button -->
             <div class="score-footer">
-                <button class="play-again" onclick='playAgain()' hidden>Play Again</button>
+                <button class="play-again" onclick="playAgain()" hidden>Play Again</button>
             </div>
         </div>
 
