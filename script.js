@@ -66,6 +66,22 @@ function getSavedBestScores() {
   bestScoresToDOM();
 }
 
+// Update Best Score Array
+function updateBestScore() {
+  bestScoreArray.forEach((scroe, index) => {
+    // Select correct Best Score to update
+    if (questionAmount == scorePage.questions) {
+      // Return Best Score as number with one decimal
+      const savedBestScore = number(bestScoreArray[index].bestScore);
+      // Update if the new final score is less or replacing zero
+      if ( savedBestScore === 0 || savedBestScore > finalTime) {
+        bestScoreArray[index]
+      }
+    }
+  });
+
+}
+
 // Reset Game
 function playAgain() {
   gamePage.addEventListener("click", startTimer);
