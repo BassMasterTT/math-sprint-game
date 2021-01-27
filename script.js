@@ -70,7 +70,7 @@ function getSavedBestScores() {
 function updateBestScore() {
   bestScoreArray.forEach((scroe, index) => {
     // Select correct Best Score to update
-    if (questionAmount == scorePage.questions) {
+    if (questionAmount == score.questions) {
       // Return Best Score as number with one decimal
       const savedBestScore = number(bestScoreArray[index].bestScore);
       // Update if the new final score is less or replacing zero
